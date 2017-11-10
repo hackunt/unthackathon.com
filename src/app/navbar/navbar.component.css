@@ -1,2 +1,22 @@
-
+ .navbar-brand{
+    color: #FFFFFF;
+  }
   
+  .navbar-brand:hover {
+    color: grey
+  }
+  
+  #nav-options {
+      color: #FFFFFF
+  }
+
+  #nav-options:hover {
+      color: grey
+  }
+
+  .navbar-inverse {
+      background-color: rgb(32, 32, 32);
+      border-style: none;
+      border-radius: 0px;
+      box-shadow: 0px 1px 5px rgb(0, 88, 1);
+  }

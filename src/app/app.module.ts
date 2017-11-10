@@ -8,13 +8,21 @@ import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { appRoutes } from './app.routing';
+import { FaqComponent } from './faq/faq.component';
+import { ContactComponent } from './contact/contact.component';
+import { SponsorComponent } from './sponsor/sponsor.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    FaqComponent,
+    ContactComponent,
+    SponsorComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
