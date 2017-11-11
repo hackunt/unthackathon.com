@@ -1,0 +1,12 @@
+.typeform-widget {
+    width: 100%;
+    height: 600px;
+}
+
+#typeframe {
+    display: inline-block;
+    width: 100%;
+    min-height: 500px;
+    height: 600px;
+    border: none;
+}

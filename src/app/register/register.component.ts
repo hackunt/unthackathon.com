@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  // Properties
+
+  constructor() {
+    
+  }
 
   ngOnInit() {
+    // embed typeform in page
+    console.log('elem: ' + document.getElementById('typeform'));
   }
 
 }
