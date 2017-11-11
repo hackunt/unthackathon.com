@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-countdown',
   templateUrl: './countdown.component.html',
   styleUrls: ['./countdown.component.css']
+  HTMLScriptElement
 })
 
 export class CountdownComponent implements OnInit {
@@ -34,23 +35,24 @@ export class CountdownComponent implements OnInit {
 
 
   constructor() { }
-
+  ngOnInit(){}
+/*
   ngOnInit() {
 
     // Number parts variables
     this.parts = this.getPartsArray();
   
     // The canvas context we will use to draw on
-    var seccanv = <HTMLCanvasElement>document.getElementById('secondscanvas');  
+    let seccanv = <HTMLCanvasElement>document.getElementById('secondscanvas');  
     this.secondscanvas = seccanv.getContext('2d');
   
-    var mincanv = <HTMLCanvasElement>document.getElementById('minutescanvas');  
+    let mincanv = <HTMLCanvasElement>document.getElementById('minutescanvas');  
     this.minutescanvas = mincanv.getContext('2d');
     
-    var hourcanv = <HTMLCanvasElement>document.getElementById('hourscanvas');  
+    let hourcanv = <HTMLCanvasElement>document.getElementById('hourscanvas');  
     this.hourscanvas = hourcanv.getContext('2d');
     
-    var dayscanv = <HTMLCanvasElement>document.getElementById('dayscanvas');    
+    let dayscanv = <HTMLCanvasElement>document.getElementById('dayscanvas');    
     this.dayscanvas = dayscanv.getContext('2d');
   
     // The elem and style for the timercanvas
@@ -64,6 +66,7 @@ export class CountdownComponent implements OnInit {
     this.x = (3 * (parseInt(this.timercanvasstyle.width, 10) / 4)) - (this.w / 2);
     this.x2 = (parseInt(this.timercanvasstyle.width, 10) / 4) - (this.w / 2);
   
+
     // The y values for the animations
     this.y1 = 0;
     this.y2 = parseInt(this.timercanvasstyle.height, 10) / 3
@@ -75,46 +78,36 @@ export class CountdownComponent implements OnInit {
     // The interval that counts the timer
     this.timerthread;
   
-    console.log(this.parts[0]);
-    console.log(this.secondscanvas);
-    console.log(this.w);
-    console.log(this.h);
     this.countdownTill(2018,2,9,0,0,0);
-
-
-    this.parts[0].onload = () =>
-    {
-      this.secondscanvas.drawImage(this.parts[0], 0, 0, this.w, this.h);      
-    };
-  }
+  }*/
 
   countdownTill(yyyy, mm, dd, hh, mn, ss)
   {
     console.log('run');
-      var timetill = new Date(yyyy, (mm - 1), dd, hh, mn, ss);
-      var curdate = new Date();
+      let timetill = new Date(yyyy, (mm - 1), dd, hh, mn, ss);
+      let curdate = new Date();
   
       // get total seconds between the times
-      var delta = Math.abs(timetill.getTime() - curdate.getTime()) / 1000;
+      let delta = Math.abs(timetill.getTime() - curdate.getTime()) / 1000;
   
       // calculate (and subtract) whole days
-      var days = Math.floor(delta / 86400);
+      let days = Math.floor(delta / 86400);
       this.timetillcount[0] = days;
       delta -= days * 86400;
   
   
       // calculate (and subtract) whole hours
-      var hours = Math.floor(delta / 3600) % 24;
+      let hours = Math.floor(delta / 3600) % 24;
       this.timetillcount[1] = hours;
       delta -= hours * 3600;
   
       // calculate (and subtract) whole minutes
-      var minutes = Math.floor(delta / 60) % 60;
+      let minutes = Math.floor(delta / 60) % 60;
       this.timetillcount[2] = minutes;
       delta -= minutes * 60;
   
       // what's left is seconds
-      var seconds = Math.floor(delta % 60);  // in theory the modulus is not required
+      let seconds = Math.floor(delta % 60);  // in theory the modulus is not required
       this.timetillcount[3] = seconds;
   
       this.initDraw();
@@ -180,7 +173,7 @@ export class CountdownComponent implements OnInit {
 
   evaluateDraw(num, wrapstart, canvas)
   {
-      var h = parseInt(this.timercanvasstyle.height, 10) / 3
+      let h = parseInt(this.timercanvasstyle.height, 10) / 3
       if((num < wrapstart) && (num > 1))
       {
           window.requestAnimationFrame(
@@ -215,14 +208,14 @@ export class CountdownComponent implements OnInit {
 
   getPartsArray()
   {
-      var parts = [
-                    <HTMLImageElement>document.createElement('img'),
-                    <HTMLImageElement>document.createElement('img'),
-                    <HTMLImageElement>document.createElement('img'),
-                    <HTMLImageElement>document.createElement('img'),
-                    <HTMLImageElement>document.createElement('img'),
-                    <HTMLImageElement>document.createElement('img'),
-                    <HTMLImageElement>document.createElement('img')
+      let parts = [
+                    new Image(),
+                    new Image(),
+                    new Image(),
+                    new Image(),
+                    new Image(),
+                    new Image(),     
+                    new Image(),
                   ];
   
       // The sources
@@ -270,11 +263,11 @@ export class CountdownComponent implements OnInit {
   
   partsForNextInt(cur, next)
   {
-      var curparts = this.getPartsFromInt(cur);
-      var nextparts = this.getPartsFromInt(next);
-      var partsneeded = [];
+      let curparts = this.getPartsFromInt(cur);
+      let nextparts = this.getPartsFromInt(next);
+      let partsneeded = [];
   
-      for(var i = 0; i < nextparts.length; i++)
+      for(let i = 0; i < nextparts.length; i++)
       {
           if(!this.includes(curparts,nextparts[i]))
           {
@@ -288,11 +281,11 @@ export class CountdownComponent implements OnInit {
 
   partsToBeDropped(cur, next)
   {
-      var curparts = this.getPartsFromInt(cur);
-      var nextparts = this.getPartsFromInt(next);
-      var partsdropped = [];
+      let curparts = this.getPartsFromInt(cur);
+      let nextparts = this.getPartsFromInt(next);
+      let partsdropped = [];
   
-      for(var i = 0; i < curparts.length; i++)
+      for(let i = 0; i < curparts.length; i++)
       {
           if(!this.includes(nextparts, curparts[i]))
           {
@@ -306,10 +299,10 @@ export class CountdownComponent implements OnInit {
 
   partsToStay(cur, next)
   {
-          var drop = this.partsToBeDropped(cur, next);
-          var curparts = this.getPartsFromInt(cur);
-          var partsstay = [];
-          for(var i = 0; i < curparts.length; i++)
+          let drop = this.partsToBeDropped(cur, next);
+          let curparts = this.getPartsFromInt(cur);
+          let partsstay = [];
+          for(let i = 0; i < curparts.length; i++)
           {
               if(!this.includes(drop, curparts[i]))
               {
@@ -323,29 +316,29 @@ export class CountdownComponent implements OnInit {
   animate(p1, p2, pc, pp, canvas, y, dy)
   {
     // ex. 12; d1 = 1, d0 = 2
-    var d1p1 = this.getPlace(p1, 1);
-    var d1p2 = this.getPlace(p2, 1);
-    var d1pc = this.getPlace(pc, 1);
-    var d1pp = this.getPlace(pp, 1);
+    let d1p1 = this.getPlace(p1, 1);
+    let d1p2 = this.getPlace(p2, 1);
+    let d1pc = this.getPlace(pc, 1);
+    let d1pp = this.getPlace(pp, 1);
 
-    var d0p1 = this.getPlace(p1, 0);
-    var d0p2 = this.getPlace(p2, 0);
-    var d0pc = this.getPlace(pc, 0);
-    var d0pp = this.getPlace(pp, 0);
+    let d0p1 = this.getPlace(p1, 0);
+    let d0p2 = this.getPlace(p2, 0);
+    let d0pc = this.getPlace(pc, 0);
+    let d0pp = this.getPlace(pp, 0);
 
     // Parts for the first digits
-    var partstotop0 = this.partsForNextInt(d0p2, d0p1);
-    var partsfornext0 = this.partsForNextInt(d0pc, d0p2);
-    var partstostay0 = this.partsToStay(d0pc, d0p2);
-    var partstodrop0 = this.partsToBeDropped(d0pc, d0p2);
-    var partstofall0 = this.partsToBeDropped(d0pp, d0pc);
+    let partstotop0 = this.partsForNextInt(d0p2, d0p1);
+    let partsfornext0 = this.partsForNextInt(d0pc, d0p2);
+    let partstostay0 = this.partsToStay(d0pc, d0p2);
+    let partstodrop0 = this.partsToBeDropped(d0pc, d0p2);
+    let partstofall0 = this.partsToBeDropped(d0pp, d0pc);
 
     // Parts for the second digits
-    var partstotop1 = this.partsForNextInt(d1p2, d1p1);
-    var partsfornext1 = this.partsForNextInt(d1pc, d1p2);
-    var partstostay1 = this.partsToStay(d1pc, d1p2);
-    var partstodrop1 = this.partsToBeDropped(d1pc, d1p2);
-    var partstofall1 = this.partsToBeDropped(d1pp, d1pc);
+    let partstotop1 = this.partsForNextInt(d1p2, d1p1);
+    let partsfornext1 = this.partsForNextInt(d1pc, d1p2);
+    let partstostay1 = this.partsToStay(d1pc, d1p2);
+    let partstodrop1 = this.partsToBeDropped(d1pc, d1p2);
+    let partstofall1 = this.partsToBeDropped(d1pp, d1pc);
 
     switch(canvas)
     {
@@ -443,7 +436,7 @@ export class CountdownComponent implements OnInit {
 
   getPlace(val, place)
   {
-      var x = (Math.floor(val / Math.pow(10, place)) / 10);
+      let x = (Math.floor(val / Math.pow(10, place)) / 10);
       x = (x - Math.floor(x)) * 10;
       return Math.round(x);
   }
@@ -454,51 +447,54 @@ export class CountdownComponent implements OnInit {
       switch(canvas)
       {
           case this.secondscanvas:
-              for(var i = 0; i < this.parts.length; i++)
+              for(let i = 0; i < this.parts.length; i++)
               {
                   if(this.includes(p, i))
                   {
-                    console.log("t:"+this.parts[i]);                                          
+                    console.log("t:"+this.parts[i]);     
+                    console.log(i);                                     
                     this.parts[i].onload = () =>
                     {
-                      console.log("bout:"+this.parts[i]);                      
-                      this.secondscanvas.drawImage(this.parts[i], x, y, this.w, this.h);
+                      canvas.drawImage(this.parts[i], x, y, this.w, this.h);      
                     };
                   }
               }
               break;
           case this.minutescanvas:
-              for(var i = 0; i < this.parts.length; i++)
+              for(let i = 0; i < this.parts.length; i++)
               {
                   if(this.includes(p, i))
                   {
+                    console.log(i);                                                         
                     this.parts[i].onload = () =>
                     {
-                      this.minutescanvas.drawImage(this.parts[i], x, y, this.w, this.h);
+                      canvas.drawImage(this.parts[i], x, y, this.w, this.h);      
                     };
                   }
               }
               break;
           case this.hourscanvas:
-              for(var i = 0; i < this.parts.length; i++)
+              for(let i = 0; i < this.parts.length; i++)
               {
                   if(this.includes(p, i))
                   {
+                    console.log(i);                                                         
                     this.parts[i].onload = () =>
                     {
-                      this.hourscanvas.drawImage(this.parts[i], x, y, this.w, this.h);
+                      canvas.drawImage(this.parts[i], x, y, this.w, this.h);      
                     };
                   }
               }
               break;
           case this.dayscanvas:
-              for(var i = 0; i < this.parts.length; i++)
+              for(let i = 0; i < this.parts.length; i++)
               {
                   if(this.includes(p, i))
                   {
+                    console.log(i);                                                         
                     this.parts[i].onload = () =>
                     {
-                      this.dayscanvas.drawImage(this.parts[i], x, y, this.w, this.h);
+                      canvas.drawImage(this.parts[i], x, y, this.w, this.h);      
                     };
                   }
               }
@@ -509,7 +505,10 @@ export class CountdownComponent implements OnInit {
 
   initDraw()
   {
-    var y = parseInt(this.timercanvasstyle.height, 10) / 3;
+    console.log('initdraw');
+    let y = parseInt(this.timercanvasstyle.height, 10) / 3;
+    console.log("x:"+this.x+"x2:"+this.x2);
+    
 
     // Drawing the seconds
     this.drawParts(this.secondscanvas, this.getPartsFromInt(this.getPlace(this.timetillcount[3], 1)), this.x2, y);
@@ -526,12 +525,13 @@ export class CountdownComponent implements OnInit {
     // Drawing the days
     this.drawParts(this.dayscanvas, this.getPartsFromInt(this.getPlace(this.timetillcount[0], 1)), this.x2, y);
     this.drawParts(this.dayscanvas, this.getPartsFromInt(this.getPlace(this.timetillcount[0], 0)), this.x, y);
+    console.log('doneinitdraw');
   }
 
 
   includes(array, val)
   {
-    for(var i = 0; i < array.length; i++)
+    for(let i = 0; i < array.length; i++)
     {
         if(array[i] == val) return true;
     }
