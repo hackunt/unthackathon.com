@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-countdown',
   templateUrl: './countdown.component.html',
   styleUrls: ['./countdown.component.css']
-  HTMLScriptElement
 })
 
 export class CountdownComponent implements OnInit {
@@ -35,8 +34,7 @@ export class CountdownComponent implements OnInit {
 
 
   constructor() { }
-  ngOnInit(){}
-/*
+
   ngOnInit() {
 
     // Number parts variables
@@ -79,7 +77,7 @@ export class CountdownComponent implements OnInit {
     this.timerthread;
   
     this.countdownTill(2018,2,9,0,0,0);
-  }*/
+  }
 
   countdownTill(yyyy, mm, dd, hh, mn, ss)
   {
