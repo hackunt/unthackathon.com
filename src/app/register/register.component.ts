@@ -14,8 +14,13 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit() {
-    // embed typeform in page
-    console.log('elem: ' + document.getElementById('typeform'));
-  }
+    // remove footer because it isn't necessary here, and it makes the typeform work better.
+    let footer = document.getElementsByTagName('app-footer')[0];
+    footer.parentNode.removeChild(footer);
 
+    // calculate the height of the form
+    let form = document.getElementById('typeframe');
+    let height = window.innerHeight - 100;
+    form.style.height = height + 'px';
+  }
 }
