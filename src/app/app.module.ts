@@ -13,6 +13,7 @@ import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
 import { RegisterComponent } from './register/register.component';
+import { CountdownComponent } from './countdown/countdown.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RegisterComponent } from './register/register.component';
     FaqComponent,
     ContactComponent,
     SponsorComponent,
-    RegisterComponent
+    RegisterComponent,
+    CountdownComponent
   ],
   imports: [
     BrowserModule,
