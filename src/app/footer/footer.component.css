@@ -17,6 +17,9 @@
 /*
    Multicoloured Hover Variations
 */
+.container{
+    bottom-padding: 55px;
+}
 .fa {
     color: #ffffff;
     text-shadow: 0px 1px 5px rgb(0, 88, 1);

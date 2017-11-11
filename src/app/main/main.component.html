@@ -1,11 +1,18 @@
 <div class="logo">
-  <img width="300" src="../../favicon.ico">
+  <img width="300" src="../../assets/logo.png">
+  <div class="container">
+    <div class="col-6">
+     <hr>
+    </div>
+  </div>
+  <div class="container">
   <h1> {{ StartDate }} to {{ EndDate }}</h1>
   <p class="description"> {{ DescriptionText }}</p>
   <app-countdown></app-countdown>
   <div>
-    <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfT839wnBDBDl_vPTKDIaAqR73dRQgf-p1Fo5lLemFRj8pD1g/viewform?usp=sf_link','_blank')">
+    <button class="btn btn-lg btn-block" routerLink="/register">
       Register
     </button>
   </div>
+</div>
 </div>

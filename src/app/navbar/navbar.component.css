@@ -7,7 +7,9 @@
   }
   
   #nav-options {
-      color: #FFFFFF
+      color: #FFFFFF;
+      font-family: "Raleway";
+      font-size: 13px;
   }
 
   #nav-options:hover {
@@ -19,4 +21,6 @@
       border-style: none;
       border-radius: 0px;
       box-shadow: 0px 1px 5px rgb(0, 88, 1);
+      bottom-padding: 0px;
+      font-family: "Raleway";
   }
