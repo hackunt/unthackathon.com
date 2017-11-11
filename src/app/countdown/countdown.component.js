@@ -170,13 +170,13 @@ function getPartsArray()
                 ];
 
     // The sources
-    parts[0].src = '../Images/pg0.png';
-    parts[1].src = '../Images/pg1.png';
-    parts[2].src = '../Images/pg2.png';
-    parts[3].src = '../Images/pg3.png';
-    parts[4].src = '../Images/pg4.png';
-    parts[5].src = '../Images/pg5.png';
-    parts[6].src = '../Images/pg6.png';
+    parts[0].src = '../../assets/countdownimages/pg0.png';
+    parts[1].src = '../../assets/countdownimages/pg1.png';
+    parts[2].src = '../../assets/countdownimages/pg2.png';
+    parts[3].src = '../../assets/countdownimages/pg3.png';
+    parts[4].src = '../../assets/countdownimages/pg4.png';
+    parts[5].src = '../../assets/countdownimages/pg5.png';
+    parts[6].src = '../../assets/countdownimages/pg6.png';
 
     return parts;
 }
