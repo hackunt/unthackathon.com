@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
 import { RegisterComponent } from './register/register.component';
 import { CountdownComponent } from './countdown/countdown.component';
+import { TwitchComponent } from './twitch/twitch.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CountdownComponent } from './countdown/countdown.component';
     ContactComponent,
     SponsorComponent,
     RegisterComponent,
-    CountdownComponent
+    CountdownComponent,
+    TwitchComponent
   ],
   imports: [
     BrowserModule,
