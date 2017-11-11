@@ -1,3 +1,22 @@
-<p>
-  countdown works!
-</p>
+<div id='timer' onload="countdownTill(2018,2,09,00,00,00)">
+  
+        <div class='facesegment'>
+            <canvas width=100 height=345 class='timercanvas' id='dayscanvas'></canvas>
+            <p class='label'>Days</p>
+        </div>
+        <div class='facesegment'>
+            <canvas width=100 height=345 class='timercanvas' id='hourscanvas'></canvas>
+            <p class='label'>Hours</p>
+        </div>
+        <div class='facesegment'>
+            <canvas width=100 height=345 class='timercanvas' id='minutescanvas'></canvas>
+            <p class='label'>Minutes</p>
+        </div>
+        <div class='facesegment'>
+            <canvas width=100 height=345 class='timercanvas' id='secondscanvas'></canvas>
+            <p class='label'>Seconds</p>
+        </div>
+
+</div>
+
+<script src="./countdown.component.js"></script>
