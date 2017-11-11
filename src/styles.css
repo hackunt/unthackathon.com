@@ -39,3 +39,7 @@ body{
 	from {background-position:0 0;}
 	to {background-position: 500px 0;}
 }
+
+hr {
+    opacity: 0.6;
+}

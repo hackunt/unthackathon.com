@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+h2, h4 {
+    font-family: "Raleway";
+    font-weight: 700;
+    color: white;
+}
+body {
+
+}
+
+h5 { 
+    color: white;
+}
+
+.col-sm-4 {
+    padding: 10px;
+}
