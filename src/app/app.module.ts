@@ -18,6 +18,7 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { TwitchComponent } from './twitch/twitch.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { InformationComponent } from './information/information.component';
+import { DescriptionComponent } from './description/description.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { InformationComponent } from './information/information.component';
     TwitchComponent,
     CountDown,
     ScheduleComponent,
-    InformationComponent
+    InformationComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,
