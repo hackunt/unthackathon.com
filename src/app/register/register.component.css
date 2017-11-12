@@ -4,6 +4,7 @@
 }
 
 #typeframe {
+    overflow-x: hidden;
     text-align: center;
     display: block;
     min-height: 500px;
