@@ -1,4 +1,7 @@
-#body
+.container{
+    text-align: center;
+}
+#body-type
 {
     color: white;
     font-size: 14pt;    
@@ -16,18 +19,11 @@ h1
     width: 100%;
 }
 
-.contactimg
-{
-    width: 20%;
-    text-align: center;
-    font-size: 14pt;
-    font-size: 2vw;
-    float: left;
+.btn-text{
+    color: black;
 }
-
-.contactimg a
-{
-    color: white;        
+.btn {
+    margin-top: 10px;
 }
 
 p
@@ -64,16 +60,4 @@ p a:hover
   
   .contactimg:hover .overlay {
     height: 110%;
-  }
-  
-  .text {
-    white-space: nowrap; 
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
   }

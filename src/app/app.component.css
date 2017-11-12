@@ -8,4 +8,6 @@ h1, h2, h4 {
 html, body
 {
   background-color: rgba(0, 0, 0, 0.504);
+  max-height: 100%;
+  height: 100%
 }
