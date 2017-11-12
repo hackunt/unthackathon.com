@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { TwitchComponent } from './twitch/twitch.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { InformationComponent } from './information/information.component';
+import { DevcountdownComponent } from './devcountdown/devcountdown.component';
 // imports for different components
 
 export const appRoutes: Routes = [
@@ -18,6 +19,8 @@ export const appRoutes: Routes = [
   { path: 'livestream', component: TwitchComponent },
   { path: 'schedule', component: ScheduleComponent },
   { path: 'information', component: InformationComponent },
+  // developer stuff, don't delete
+  { path: 'dev', component: DevcountdownComponent },
   // Leave at the bottom
   { path: '**', redirectTo: '', pathMatch: 'full'},
 ];
