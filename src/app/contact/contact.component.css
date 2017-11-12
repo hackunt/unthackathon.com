@@ -38,6 +38,11 @@ p a
     color: #07a24f;
 }
 
+p a:hover
+{
+    color: #D48359;
+}
+
 .contactimg
 {
     position: relative;
