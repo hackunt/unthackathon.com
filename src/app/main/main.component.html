@@ -1,4 +1,4 @@
-<div class="logo">
+<!-- <div class="logo">
   <img width="300" src="../../assets/logo.png">
   <div class="container">
     <div class="col-6">
@@ -17,4 +17,18 @@
     </button>
   </div>
 </div>
+</div> -->
+<div class="container">
+    <div class="logo"><img src="../../assets/logo.png"></div>
+    <hr> 
+    <h3> {{ StartDate }} - {{ EndDate }}</h3>
+    <app-countdown></app-countdown>
+    <div class="row">
+        <button class="btn btn-lg" routerLink="/register">
+          REGISTER
+        </button>
+        <button class="btn btn-lg" routerLink="/register">
+          SPONSORS
+        </button>
+      </div>
 </div>

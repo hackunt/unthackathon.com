@@ -1,19 +1,21 @@
  .navbar-brand{
     color: #FFFFFF;
     font-weight: 700;
+    font-size: 16px;
   }
   
   .navbar-brand:hover {
     color: grey
   }
   
-  #nav-options {
+  a {
       color: #FFFFFF;
       font-family: "Raleway";
       font-size: 13px;
+      font-weight: 700;
   }
 
-  #nav-options:hover {
+  a:hover {
       color: grey
   }
 
@@ -22,6 +24,9 @@
       border-style: none;
       border-radius: 0px;
       box-shadow: 0px 1px 5px rgb(0, 88, 1);
-      bottom-padding: 0px;
+      padding-bottom: 0px;
       font-family: "Raleway";
+  }
+  .icon-bar{
+      background-color: white;
   }
