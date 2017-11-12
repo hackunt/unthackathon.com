@@ -1,6 +1,23 @@
+h2 {
+    text-align: center;
+}
+
+p {
+    /* text-indent: 2.0em; */
+    line-height: 200%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .desc-container {
     width: 100%;
     color: white;
     font-size: 14pt;
+}
+
+a:link {
+    color: #07a24f;
+}
+a:visited {
+    color: #07a24f;
 }
