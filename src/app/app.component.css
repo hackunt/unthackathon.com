@@ -4,3 +4,8 @@ h1, h2, h4 {
     font-weight: 700;
     color: white;
 }
+
+html, body
+{
+  background-color: rgba(0, 0, 0, 0.504);
+}
