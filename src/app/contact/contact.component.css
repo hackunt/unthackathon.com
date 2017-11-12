@@ -1,4 +1,37 @@
-h1
+#body
 {
     color: white;
+}
+
+h1
+{
+    text-align: center;  
+}
+
+#contact
+{
+    width: 100%;
+}
+
+.contactimg
+{
+    width: 20%;
+    text-align: center;
+    font-size: 14pt;
+    float: left;
+}
+
+.contactimg a
+{
+    color: white;        
+}
+
+p
+{
+    font-size: 14pt;
+}
+
+p a
+{
+    color: wheat;
 }
