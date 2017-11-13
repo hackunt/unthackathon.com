@@ -20,6 +20,18 @@ h1
     text-align: center;  
 }
 
+h5{
+    line-height: 20px;
+}
+
+h4 {
+    padding-top: 5px;
+}
+
+hr{
+    width: 70%
+}
+
 #contact
 {
     margin-top: 20px;
