@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./information.component.css']
 })
 export class InformationComponent implements OnInit {
-  StartDate = 'February 6th';
-  EndDate = 'February 8th';
+  StartDate = 'February 9th';
+  EndDate = 'February 11th';
   Location = 'UNT Discovery Park';
   Addr = '3940 N Elm St, Denton, TX, 76207';
   constructor() { }
