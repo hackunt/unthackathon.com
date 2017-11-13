@@ -2,3 +2,13 @@
     <h1>HACKUNT SCHEDULE</h1>
     <hr>
 </div>
+<div class="container">
+  <ul *ngFor="let event of SatEvents" class="card col-md-2">
+    <ul>{{ event.EventTitle }}</ul>
+    <ul>{{ event.Location }}</ul>
+    <ul>{{ event.Date }}</ul>
+    <ul>{{ event.StartTime}} to {{ event.EndTime }}</ul>
+    <ul>{{ event.Description }}</ul>
+    <ul>{{ event.URL }}</ul>
+  </ul>
+</div>
