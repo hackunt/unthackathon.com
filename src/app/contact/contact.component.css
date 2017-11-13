@@ -3,19 +3,26 @@
 }
 #body-type
 {
+    background-color: rgba(0, 0, 0, 0.504);
     color: white;
-    font-size: 14pt;    
+    font-size: 14pt;  
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 1%;
 }
 
 h1
 {
+    color: white;
     font-weight: bold;
     text-align: center;  
 }
 
 #contact
 {
-    margin-top: 20pt;
+    margin-top: 20px;
     width: 100%;
 }
 
