@@ -20,6 +20,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { InformationComponent } from './information/information.component';
 import { DescriptionComponent } from './description/description.component';
 import { DevcountdownComponent } from './devcountdown/devcountdown.component';
+import { MlhComponent } from './mlh/mlh.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DevcountdownComponent } from './devcountdown/devcountdown.component';
     ScheduleComponent,
     InformationComponent,
     DescriptionComponent,
-    DevcountdownComponent
+    DevcountdownComponent,
+    MlhComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+.mlh-container {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+}
+
+.mlh-container ul {
+    text-align: left;
+}
+
+a:link {
+    color: #07a24f;
+}
+a:visited {
+    color: #07a24f;
+}
+a:hover {
+    color: #D48359;
+}
