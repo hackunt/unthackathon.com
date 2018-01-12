@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  StartDate = 'FEBRUARY 9TH';
-  EndDate = 'FEBRUARY 11TH';
+  StartDate = 'APRIL 6TH';
+  EndDate = 'APRIL 8TH';
   constructor() { }
 
   ngOnInit() {}
