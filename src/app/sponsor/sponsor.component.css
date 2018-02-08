@@ -5,7 +5,10 @@ h1, h2, h4, h5 {
   text-align: center;
   font-weight: 700;
 }
-
+li {
+  list-style-type: none;
+  margin: 30px;
+}
 #sponsors{
   background-color: white;
   width: 100%;
