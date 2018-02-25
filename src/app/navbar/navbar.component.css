@@ -2,23 +2,23 @@
     color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
-  }
+}
   
-  a {
-      color: #FFFFFF;
-      font-family: "Raleway";
-      font-size: 13px;
-      font-weight: 700;
-  }
+a {
+    color: #FFFFFF;
+    font-family: "Raleway";
+    font-size: 13px;
+    font-weight: 700;
+}
 
-  .navbar-inverse {
-      background-color: rgba(32, 32, 32, 0.709);
-      border-style: none;
-      border-radius: 0px;
-      box-shadow: 0px 1px 5px rgb(0, 88, 1);
-      padding-bottom: 0px;
-      font-family: "Raleway";
-  }
+.navbar-inverse {
+    background-color: rgba(32, 32, 32, 0.709);
+    border-style: none;
+    border-radius: 0px;
+    box-shadow: 0px 1px 5px rgb(0, 88, 1);
+    padding-bottom: 0px;
+    font-family: "Raleway";
+}
   .icon-bar{
       background-color: white;
   }

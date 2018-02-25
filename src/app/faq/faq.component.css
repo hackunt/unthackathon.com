@@ -3,6 +3,7 @@ h1, h2, h4 {
     font-family: "Raleway";
     font-weight: 700;
     color: white;
+    text-align: center;
 }
 
 h5 { 
@@ -14,8 +15,27 @@ h5 {
     padding: 10px;
 }
 #FAQContent {
-    background-color: rgba(0, 0, 0, 0.504);
-    margin-top: 20px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    /* margin-top: 20px; */
     padding-top: 30px;
     padding-bottom: 2%;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.flexbox {
+    /* flex: 1 1 350px; */
+    width: 100%;
+    max-width: 250px;
+    flex-shrink: 1;
+    /* height: 90%; */
+    /* line-height: 200px; */
+  
+    margin: 10px;
+    text-align: center;
+    /* background-color: green; */
 }

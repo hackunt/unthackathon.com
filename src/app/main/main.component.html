@@ -1,28 +1,32 @@
 <div class="container">
-    <div class="logo"><img src="../../assets/logo.png"></div>
-    <hr> 
-    <h3> {{ StartDate }} - {{ EndDate }}</h3>
-    <app-countdown></app-countdown>
-    <div class="row">
-      <button class="btn" routerLink="/register">
-        REGISTER
-      </button>
-      <button class="btn" routerLink="/sponsors">
-        SPONSORS
-      </button>
-    </div>
-    <app-description></app-description>
-    <app-mlh></app-mlh>
-</div>
-    <!-- Sponsors -->
-  <br>
+  <div class="logo"><img src="../../assets/logo.png"></div>
+  <hr> 
+  <h3> {{ StartDate }} - {{ EndDate }}</h3>
+  <app-countdown></app-countdown>
   <div class="row">
-      <div class="" id="topTier">
-      <img src="../../assets/sponsors/logo-Samsung-Dark_Font.svg" />
-      <img src="../../assets/sponsors/dottech.svg" />
-      <img src="../../assets/sponsors/soylent.svg" />
-      <img src="../../assets/sponsors/wolfram-logo.svg" />
-    </div>
+    <button class="btn" routerLink="/register">
+      REGISTER
+    </button>
+    <button class="btn" routerLink="/sponsors">
+      SPONSORS
+    </button>
   </div>
-  <br>
-  <br>
+  <br />
+  <app-description></app-description>
+  <app-faq></app-faq>
+  <!-- <app-sponsor></app-sponsor> -->
+  <hr />
+  <h1>Our Sponsors</h1>
+  <hr />
+  <div class="flexcontainer">
+    <div class="flexbox"><img src="../../assets/sponsors/logo-Samsung-Dark_Font.svg" /></div>
+    <div class="flexbox"><img src="../../assets/sponsors/dottech.svg" /></div>
+    <div class="flexbox"><img src="../../assets/sponsors/soylent.svg" /></div>
+    <div class="flexbox"><img src="../../assets/sponsors/wolfram-logo.svg" /></div>
+  </div>
+  <app-mlh></app-mlh>
+</div>
+<!-- Sponsors -->
+<br>
+<br>
+<br>

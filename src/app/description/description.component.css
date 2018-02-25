@@ -1,6 +1,8 @@
-h2 {
-    font-weight: bold;
+h1, h2 {
+    font-family: "Raleway";
+    color: white;
     text-align: center;
+    font-weight: 700;
 }
 
 
