@@ -31,7 +31,7 @@ li {
   border-radius: 50%;
   margin: 10px 10px 10px 10px;
 }
-button {
+.btn {
   background-color: #000000;
   border: none;
   color: white;
@@ -48,6 +48,11 @@ button {
   -o-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
+}
+
+#sponsorus {
+  color: white;
+  text-decoration: none;
 }
 
 button:hover{
@@ -68,7 +73,7 @@ button:hover{
 .flexbox {
   /* flex: 1 1 350px; */
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   flex-shrink: 1;
   /* height: 90%; */
   /* line-height: 200px; */
@@ -78,6 +83,22 @@ button:hover{
   /* background-color: green; */
 }
 .flexbox > img {
+  max-width: 300px;
   width: 100%;
-  height: auto;
+}
+
+.sponsor {
+  -webkit-transition: all .5s ease; /* Safari and Chrome */
+  -moz-transition: all .5s ease; /* Firefox */
+  -ms-transition: all .5s ease; /* IE 9 */
+  -o-transition: all .5s ease; /* Opera */
+  transition: all .5s ease;
+}
+
+.sponsor:hover {
+  -webkit-transform:scale(1.15); /* Safari and Chrome */
+  -moz-transform:scale(1.15); /* Firefox */
+  -ms-transform:scale(1.15); /* IE 9 */
+  -o-transform:scale(1.15); /* Opera */
+   transform:scale(1.15);
 }
