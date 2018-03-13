@@ -1,10 +1,36 @@
+@media only screen and (max-width: 1000000px) {
+    p {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+  
+@media only screen and (max-width: 320px) {
+    p {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+
 h1, h2 {
     font-family: "Raleway";
     color: white;
     text-align: center;
     font-weight: 700;
 }
-
 
 p {
     /* text-indent: 2.0em; */
@@ -17,15 +43,16 @@ p {
     width: 100%;
     text-align: center;
     color: white;
-    font-size: 14pt;
+    /* font-size: 14pt; */
 }
 
 a:link {
-    color: #07a24f;
+    color: rgb(4, 58, 4);
 }
 a:visited {
-    color: #07a24f;
+    color: black;
 }
 a:hover {
-    color: #D48359;
+    /* color: #D48359; */
+    color: black;
 }

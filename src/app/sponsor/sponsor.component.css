@@ -68,22 +68,26 @@ button:hover{
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
-  /* align-items: center; */
 }
+/* 
+.tier1 > .flexbox {
+  /* max-width: 90%;
+} */
+.tier2 > .flexbox {
+  max-width: 250px;
+}
+.tier3 > .flexbox {
+  max-width: 150px;
+}
+
 .flexbox {
-  /* flex: 1 1 350px; */
   width: 100%;
-  max-width: 300px;
   flex-shrink: 1;
-  /* height: 90%; */
-  /* line-height: 200px; */
 
   margin: 10px;
   text-align: center;
-  /* background-color: green; */
 }
-.flexbox > img {
-  max-width: 300px;
+.flexbox img {
   width: 100%;
 }
 

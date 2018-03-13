@@ -39,3 +39,14 @@ h5 {
     text-align: center;
     /* background-color: green; */
 }
+
+a:link {
+    color: rgb(4, 58, 4);
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    /* color: #D48359; */
+    color: black;
+}
