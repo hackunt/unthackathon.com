@@ -12,7 +12,7 @@ a {
 }
 
 .navbar-inverse {
-    background-color: rgba(32, 32, 32, 0.709);
+    background-color: rgba(32, 32, 32, 0.879);
     border-style: none;
     border-radius: 0px;
     box-shadow: 0px 1px 5px rgb(0, 88, 1);
@@ -22,3 +22,8 @@ a {
   .icon-bar{
       background-color: white;
   }
+
+.navbar {
+ position: fixed;
+ width: 100%;
+}

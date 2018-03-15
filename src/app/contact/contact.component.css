@@ -1,70 +1,48 @@
-.container{
-    text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+@media only screen and (max-width: 768px) {
+  font-size: 20px;
 }
-#body-type
+
+@media only screen and (max-width: 320px) {
+  font-size: 10px;
+}
+
+#body
 {
-    background-color: rgba(0, 0, 0, 0.504);
     color: white;
-    font-size: 14pt;  
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 30px;
-    padding-bottom: 1%;
+    font-size: 14pt;    
 }
 
 h1
 {
-    color: white;
     font-weight: bold;
     text-align: center;  
 }
 
-img {
-    max-height: 100%;
-    max-width: 100%;
-    height: 200px;
-    width: 200px;
-}
-
-h5{
-    line-height: 20px;
-}
-
-h4 {
-    padding-top: 5px;
-}
-
-hr{
-    width: 70%
-}
-
 #contact
 {
-    margin-top: 20px;
+    margin-top: 20pt;
     width: 100%;
 }
 
-.btn-text{
-    color: black;
+.contactimg
+{
+    width: 20%;
+    text-align: center;
+    font-size: 14pt;
+    font-size: 2vw;
+    float: left;
 }
-.btn {
-    margin-top: 10px;
+
+.contactimg a
+{
+    color: white;        
 }
 
 p
 {
     line-height: 200%;
-}
-
-p a
-{
-    color: #07a24f;
-}
-
-p a:hover
-{
-    color: #D48359;
 }
 
 .contactimg
@@ -87,3 +65,26 @@ p a:hover
   .contactimg:hover .overlay {
     height: 110%;
   }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+a:link {
+    color: rgb(4, 58, 4);
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    /* color: #D48359; */
+    color: black;
+}
