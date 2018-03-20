@@ -10,11 +10,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="96.499893mm"
-   height="44.714581mm"
-   viewBox="0 0 96.49989 44.714582"
+   height="59.594582mm"
+   viewBox="0 0 96.49989 59.594584"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="soylent.svg">
   <defs
      id="defs2">
@@ -59,16 +59,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="482.61635"
-     inkscape:cy="248.3573"
+     inkscape:cx="-7.3836505"
+     inkscape:cy="276.47698"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1440"
+     inkscape:window-height="769"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     fit-margin-bottom="7.44"
+     fit-margin-top="7.44"
+     fit-margin-left="0"
+     fit-margin-right="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -85,7 +89,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(21.85891,-169.82994)">
+     transform="translate(21.85891,-162.38994)">
     <g
        transform="matrix(0.10566658,0,0,-0.10545892,-33.514462,251.97495)"
        inkscape:label="Soylent_Logo_Treatments_2017"

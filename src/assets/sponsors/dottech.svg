@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="84.666664mm"
-   height="40.9575mm"
-   viewBox="0 0 84.666666 40.957501"
+   height="53.7575mm"
+   viewBox="0 0 84.666666 53.7575"
    version="1.1"
    id="svg8"
    sodipodi:docname="dottech.svg"
-   inkscape:version="0.92.1 r15371">
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
   <defs
      id="defs2">
     <clipPath
@@ -65,16 +65,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="205.42623"
-     inkscape:cy="218.95465"
+     inkscape:cx="-284.57376"
+     inkscape:cy="243.14366"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1440"
+     inkscape:window-height="769"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     fit-margin-top="6.4"
+     fit-margin-bottom="6.4"
+     fit-margin-left="0"
+     fit-margin-right="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -83,6 +87,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -90,7 +95,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-51.480976,-135.56949)">
+     transform="translate(-51.480976,-129.16949)">
     <g
        transform="matrix(0.19069069,0,0,0.19067675,131.60545,-400.10267)"
        id="layer1-6"
