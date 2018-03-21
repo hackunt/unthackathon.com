@@ -109,3 +109,11 @@ button:hover{
   -o-transform:scale(1.15); /* Opera */
    transform:scale(1.15);
 }
+
+.anchor:before { 
+	display: block; 
+ 	content: " "; 
+  	height: 50px;      /* Give height of your fixed element */
+        margin-top: -50px; /* Give negative margin of your fixed element */  	
+        visibility: hidden; 
+}
