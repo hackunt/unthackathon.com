@@ -74,9 +74,12 @@ button:hover{
   /* max-width: 90%;
 } */
 .tier2 > .flexbox {
-  max-width: 250px;
+  max-width: 350px;
 }
 .tier3 > .flexbox {
+  max-width: 200px;
+}
+.tier4 > .flexbox {
   max-width: 150px;
 }
 
