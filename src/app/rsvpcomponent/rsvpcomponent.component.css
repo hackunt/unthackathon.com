@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+h1, h2, h4, h5 {
+  font-family: "Raleway";
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+.RSVPComponent {
+    padding-top: 50px;
+    text-align: center;
+    /* height: 1000px; */
+}
+
+img {
+    padding: 20px;
+}

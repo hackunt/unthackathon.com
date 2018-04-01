@@ -21,6 +21,7 @@ import { InformationComponent } from './information/information.component';
 import { DescriptionComponent } from './description/description.component';
 import { DevcountdownComponent } from './devcountdown/devcountdown.component';
 import { MlhComponent } from './mlh/mlh.component';
+import { RSVPComponent } from './rsvpcomponent/rsvpcomponent.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MlhComponent } from './mlh/mlh.component';
     InformationComponent,
     DescriptionComponent,
     DevcountdownComponent,
-    MlhComponent
+    MlhComponent,
+    RSVPComponent
   ],
   imports: [
     BrowserModule,
