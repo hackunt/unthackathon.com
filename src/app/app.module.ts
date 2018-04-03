@@ -22,6 +22,7 @@ import { DescriptionComponent } from './description/description.component';
 import { DevcountdownComponent } from './devcountdown/devcountdown.component';
 import { MlhComponent } from './mlh/mlh.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,7 @@ import { MlhComponent } from './mlh/mlh.component';
     InformationComponent,
     DescriptionComponent,
     DevcountdownComponent,
-    MlhComponent
+    MlhComponent,
   ],
   imports: [
     BrowserModule,
