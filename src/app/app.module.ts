@@ -21,6 +21,11 @@ import { InformationComponent } from './information/information.component';
 import { DescriptionComponent } from './description/description.component';
 import { DevcountdownComponent } from './devcountdown/devcountdown.component';
 import { MlhComponent } from './mlh/mlh.component';
+import { RSVPComponent } from './rsvpcomponent/rsvpcomponent.component';
+import { AboutComponent } from './about/about.component';
+
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+
 
 
 @NgModule({
@@ -41,11 +46,14 @@ import { MlhComponent } from './mlh/mlh.component';
     DescriptionComponent,
     DevcountdownComponent,
     MlhComponent,
+    RSVPComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
