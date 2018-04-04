@@ -134,3 +134,8 @@ button:hover{
   max-width: 300px;
   width: 100%;
 }
+
+.nothyperlink {
+  color: white;
+  text-decoration: none;
+}
