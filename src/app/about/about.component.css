@@ -87,7 +87,16 @@ button:hover{
   transition: all .5s ease;
 }
 
-.flexbox:hover .staff{
+.tier2 > .flexbox:hover .staff {
+  -webkit-transform:scale(1.1); /* Safari and Chrome */
+  -moz-transform:scale(1.1); /* Firefox */
+  -ms-transform:scale(1.1); /* IE 9 */
+  -o-transform:scale(1.1); /* Opera */
+   transform:scale(1.1);
+   text-decoration: none;  
+}
+
+.flexbox:hover .staff {
   -webkit-transform:scale(.75) translate(0px, -50px); /* Safari and Chrome */
   -moz-transform:scale(.75) translate(0px, -50px); /* Firefox */
   -ms-transform:scale(.75) translate(0px, -50px); /* IE 9 */
@@ -96,7 +105,7 @@ button:hover{
    text-decoration: none;   
 }
 
-.flexbox:hover .bio{
+.flexbox:hover .bio {
     color: white;
     font-size: 12px;      
     -webkit-transform:scale(1.25) translate(0px, -30px); /* Safari and Chrome */
