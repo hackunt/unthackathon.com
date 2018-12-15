@@ -23,6 +23,7 @@ import { DevcountdownComponent } from './devcountdown/devcountdown.component';
 import { MlhComponent } from './mlh/mlh.component';
 import { RSVPComponent } from './rsvpcomponent/rsvpcomponent.component';
 import { AboutComponent } from './about/about.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
+    ScrollToModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
