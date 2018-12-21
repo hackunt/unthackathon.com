@@ -1,0 +1,105 @@
+.logocontainer {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #07a24f;
+}
+
+#datelogo {
+    /* width: 50vw; */
+    margin: auto;
+    margin-top: 9%;
+    padding: 1em;
+    max-width: 750px;
+}
+
+#dateloc {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#apply {
+    margin-top: 9%;
+}
+
+#union {
+    width: 50%;
+    height: auto;
+}
+
+.btn {
+    background-color: #000000;
+    color: white;
+    border-radius: 7px;
+    /* border-color: black; */
+    padding: 10px, 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgb(0, 88, 1);
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+button:hover{
+    background-color: #07a24f;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    position: relative;
+}
+
+.cloud {
+    position: absolute;
+}
+
+#cloud1 {
+    width: 12vw;
+    height: auto;
+    animation: cloudanim;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+
+#cloud2 {
+    width: 10vw;
+    height: auto;
+    animation: cloudanim;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+#cloud3 {
+    width: 10vw;
+    height: auto;
+    animation: cloudanim;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cloudanim{
+    0% { left: -20%; }
+    100% { left: 120%; }
+}
+
+@media screen and (max-width: 480px) {
+    h2, h3 {
+        font-size: 18px;
+    }
+}

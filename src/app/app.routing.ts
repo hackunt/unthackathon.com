@@ -10,6 +10,7 @@ import { InformationComponent } from './information/information.component';
 import { DevcountdownComponent } from './devcountdown/devcountdown.component';
 import { RSVPComponent } from './rsvpcomponent/rsvpcomponent.component';
 import { AboutComponent } from './about/about.component';
+import { LogoComponent } from './logo/logo.component';
 // imports for different components
 
 export const appRoutes: Routes = [
@@ -23,6 +24,7 @@ export const appRoutes: Routes = [
   { path: 'information', component: InformationComponent },
   { path: 'rsvp', component: RSVPComponent },
   { path: 'about', component: AboutComponent },  
+  { path: 'logo', component: LogoComponent },  
   // developer stuff, don't delete
   { path: 'dev', component: DevcountdownComponent },
   // Leave at the bottom
