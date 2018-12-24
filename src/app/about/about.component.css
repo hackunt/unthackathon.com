@@ -1,6 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+.container {
+  width: 100%;
+  min-height: 75vh;
+  max-height: 100%;
+  text-align: left;
+  align-content: left;
+  color: white;
+  background-color: black;
+}
+
+.content {
+  padding: 6vh 10% 5% 10%;
+}
+
+.team {
+  width: 100%;
+}
+
 h1, h2, h4, h5 {
-  font-family: "Raleway";
   color: white;
   text-align: center;
   font-weight: 700;
@@ -10,36 +26,12 @@ li {
   margin: 30px;
 }
 
-.logo {
-  width: 100%;
-  max-width: 500px;
-}
 
 #topTier{
   align-content: center;
 }
-#filler{
-  border-radius: 50%;
-  margin: 10px 10px 10px 10px;
-}
-.btn {
-  background-color: #000000;
-  border: none;
-  color: white;
-  border-radius: 4px;
-  padding: 10px, 10px;
-  margin-top: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 15px;
-  cursor: pointer;
-  box-shadow: 0px 1px 5px rgb(0, 88, 1);
-  -moz-transition: all .2s ease-in;
-  -o-transition: all .2s ease-in;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-}
+
+
 
 #sponsorus {
   color: white;

@@ -1,14 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Offside');
 
+*{
+	font-family: 'Offside';
+}
 
 body{
 	height: 100%;
+	width: 100%;
 	margin:0;
 	padding:0;
 	font-family:"arial",heletica,sans-serif;
 	font-size:12px;
-	background: #2980b9 url('./assets/tumblr_static_bg3.png') repeat 0 0;
+	/* background: #2980b9 url('./assets/tumblr_static_bg3.png') repeat 0 0; */
 	-webkit-animation: 10s linear 0s normal none infinite animate;
 	-moz-animation: 10s linear 0s normal none infinite animate;
 	-ms-animation: 10s linear 0s normal none infinite animate;
@@ -44,4 +48,15 @@ body{
 
 hr {
     opacity: 0.6;
+}
+
+a:link {
+    color:black;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    /* color: #D48359; */
+    color: black;
 }

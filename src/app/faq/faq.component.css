@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+
+.faq {
+    min-height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    text-align: left;
+    align-content: left;
+    background-color: white;
+}
+
+.content {
+    padding: 3% 13% 5% 13%;
+    color: #07a24f;
+}
+
 h1, h2, h4 {
-    font-family: "Raleway";
     font-weight: 700;
-    color: white;
-    text-align: center;
 }
 
 h5 { 
-    color: white;
     line-height: 135%;
 }
 
@@ -17,13 +29,13 @@ h5 {
 #FAQContent {
     /* background-color: rgba(0, 0, 0, 0.504); */
     /* margin-top: 20px; */
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 2%;
 }
 
 .flexcontainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     /* align-items: center; */
 }
@@ -32,21 +44,44 @@ h5 {
     width: 100%;
     max-width: 250px;
     flex-shrink: 1;
+    padding: 3px 10px 3px 10px;
+    margin: 3px;
+    border: solid;
+    border-width: 2px;
+    border-color: #07a24f;
     /* height: 90%; */
     /* line-height: 200px; */
-  
-    margin: 10px;
-    text-align: center;
     /* background-color: green; */
 }
 
-a:link {
+.gridcontainer {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    /* align-items: center; */
+}
+.gridbox {
+    /* flex: 1 1 350px; */
+    width: 100%;
+    /* max-width: 250px; */
+    flex-shrink: 1;
+    padding: 3px 10px 3px 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: #07a24f;
+    /* height: 90%; */
+    /* line-height: 200px; */
+    /* background-color: green; */
+}
+
+/* a:link {
     color: rgb(4, 58, 4);
 }
 a:visited {
     color: black;
 }
 a:hover {
-    /* color: #D48359; */
+    color: #D48359;
     color: black;
-}
+} */

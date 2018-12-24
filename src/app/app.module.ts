@@ -24,6 +24,7 @@ import { MlhComponent } from './mlh/mlh.component';
 import { RSVPComponent } from './rsvpcomponent/rsvpcomponent.component';
 import { AboutComponent } from './about/about.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     DevcountdownComponent,
     MlhComponent,
     RSVPComponent,
-    AboutComponent
+    AboutComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

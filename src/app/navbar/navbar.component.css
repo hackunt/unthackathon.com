@@ -6,13 +6,18 @@
   
 a {
     color: #FFFFFF;
-    font-family: "Raleway";
     font-size: 13px;
     font-weight: 700;
 }
 
+.navbarlogo {
+    height: 100%;
+    width: auto;
+}
+
 .navbar-inverse {
-    background-color: rgba(32, 32, 32, 0.879);
+    /* background-color: rgba(32, 32, 32, 0.879); */
+    background-color: black;
     border-style: none;
     border-radius: 0px;
     box-shadow: 0px 1px 5px rgb(0, 88, 1);

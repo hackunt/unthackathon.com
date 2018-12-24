@@ -77,14 +77,3 @@ p
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
-
-a:link {
-    color: rgb(4, 58, 4);
-}
-a:visited {
-    color: black;
-}
-a:hover {
-    /* color: #D48359; */
-    color: black;
-}
