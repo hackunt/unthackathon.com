@@ -13,6 +13,8 @@
 .content {
     padding: 3% 13% 5% 13%;
     color: #07a24f;
+    max-width: 1600px;
+    margin: 0 auto
 }
 
 h1, h2, h4 {

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformationComponent implements OnInit {
   StartDate = 'April 6th';
-  EndDate = 'April 8th';
+  EndDate = 'April 7th';
   Location = 'UNT Discovery Park';
   Addr = '3940 N Elm St, Denton, TX, 76207';
   constructor() { }
