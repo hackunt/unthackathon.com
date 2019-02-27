@@ -99,16 +99,22 @@ h1, h2, h4, h5 {
   
   .flexbox {
     width: 100%;
-    flex-shrink: 1;
+    display: flex;
     max-width: 150px;
-    margin: auto;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
   }
+
   .flexbox img {
     width: 100%;
   }
   
+  #titlesponsor {
+    max-width: 45vw;
+  }
+
+
   .sponsor {
     -webkit-transition: all .5s ease; /* Safari and Chrome */
     -moz-transition: all .5s ease; /* Firefox */
