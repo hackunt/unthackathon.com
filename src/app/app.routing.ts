@@ -7,7 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { TwitchComponent } from './twitch/twitch.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { InformationComponent } from './information/information.component';
-import { DevcountdownComponent } from './devcountdown/devcountdown.component';
+// import { DevcountdownComponent } from './devcountdown/devcountdown.component';
 import { RSVPComponent } from './rsvpcomponent/rsvpcomponent.component';
 import { AboutComponent } from './about/about.component';
 import { LogoComponent } from './logo/logo.component';
@@ -26,7 +26,7 @@ export const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },  
   { path: 'logo', component: LogoComponent },  
   // developer stuff, don't delete
-  { path: 'dev', component: DevcountdownComponent },
+  // { path: 'dev', component: DevcountdownComponent },
   // Leave at the bottom
   { path: '**', redirectTo: '', pathMatch: 'full'},
 ];

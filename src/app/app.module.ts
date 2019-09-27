@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { CountDown } from 'ng2-date-countdown';
+// import { CountDown } from 'ng2-date-countdown';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -38,7 +38,7 @@ import { LogoComponent } from './logo/logo.component';
     RegisterComponent,
     CountdownComponent,
     TwitchComponent,
-    CountDown,
+    // CountDown,
     ScheduleComponent,
     InformationComponent,
     DescriptionComponent,
