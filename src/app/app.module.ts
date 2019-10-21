@@ -26,6 +26,7 @@ import { AboutComponent } from './about/about.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { LogoComponent } from './logo/logo.component';
 import { Sponsors2019Component } from './sponsors2019/sponsors2019.component';
+import { MailchimpFormComponent } from './mailchimp-form/mailchimp-form.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { Sponsors2019Component } from './sponsors2019/sponsors2019.component';
     RSVPComponent,
     AboutComponent,
     LogoComponent,
-    Sponsors2019Component
+    Sponsors2019Component,
+    MailchimpFormComponent
   ],
   imports: [
     BrowserModule,
