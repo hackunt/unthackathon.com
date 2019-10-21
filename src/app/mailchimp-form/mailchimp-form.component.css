@@ -25,5 +25,18 @@
 #mce-EMAIL {
    color: #000;
    width: 400px;
-   max-width: 100%;
+   max-width: 95%;
+}
+
+@media screen and (max-width: 600px) {
+   #mc-embedded-subscribe {
+      margin-top: 4px;
+      width: 400px;
+      max-width: 95%;
+   }
+
+   #mc-embedded-subscribe, #mce-EMAIL {
+      font-size: 1em;
+      padding: 10px;
+   }
 }
