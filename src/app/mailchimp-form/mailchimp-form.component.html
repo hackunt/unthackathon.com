@@ -3,7 +3,7 @@
 <div id="mc_embed_signup">
   <form #form action="https://unthackathon.us17.list-manage.com/subscribe/post?u=3d491615432e4e14e065b3c81&amp;id=8f2d08fc4d" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
     <div id="mc_embed_signup_scroll">
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      <input type="email" (keydown.enter)='form.submit()' value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="brenden.clout@unthackathon.com">
       <input type="button" (click)='form.submit()' value="Get Updates" name="subscribe" id="mc-embedded-subscribe" class="button">
       <div id="mce-responses" class="clear">
         <div class="response" id="mce-error-response" style="display:none"></div>
