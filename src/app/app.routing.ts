@@ -3,6 +3,7 @@ import { MainComponent } from '../app/main/main.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
+import { Sponsors2019Component } from './sponsors2019/sponsors2019.component';
 import { RegisterComponent } from './register/register.component';
 import { TwitchComponent } from './twitch/twitch.component';
 import { ScheduleComponent } from './schedule/schedule.component';
@@ -18,6 +19,7 @@ export const appRoutes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'sponsors', component: SponsorComponent },
+  { path: 'sponsors2019', component: Sponsors2019Component },
   { path: 'register', component: RegisterComponent },
   { path: 'livestream', component: TwitchComponent },
   { path: 'schedule', component: ScheduleComponent },

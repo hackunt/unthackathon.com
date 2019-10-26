@@ -41,9 +41,9 @@ p {
     min-height: 100vh;
     max-height: 100%;
     text-align: left;
-    align-content: left;
     color: white;
     background-color: black;
+    margin: auto;
     /* font-size: 14pt; */
 }
 
@@ -51,8 +51,10 @@ p {
     display: inline-block;
 }
 
-#content {
+.content {
     padding: 10% 15% 5% 13%;
+    max-width: 1600px;
+    margin: 0 auto
 }
 
 p {

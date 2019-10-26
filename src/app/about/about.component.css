@@ -10,6 +10,8 @@
 
 .content {
   padding: 6vh 10% 5% 10%;
+  max-width: 1600px;
+  margin: 0 auto
 }
 
 .team {
