@@ -84,7 +84,7 @@ button:hover{
     background-color: #0004;
     transition: background-color 0.2s;
     width: 554px;
-    max-width: 100%;
+    max-width: 95%;
     margin: 20px auto;
     color: #fff;
 }
